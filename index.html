@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Hand Cricket</title>
+</head>
+<body>
+    <header></header>
+    <main class="container-fluid d-flex flex-column">
+            
+        <div class="players border mt-4 p-2 d-flex flex-row align-items-center justify-content-around rounded">
+            
+            <div class="playerOne col-sm-4 d-flex flex-row align-items-center justify-content-around">
+                <div class="playerOne__name h6 p-0 m-0 d-flex flex-row align-items-center justify-content-center">Samanth</div>
+            </div>
+            
+            <div class="playerOne col-sm-4 d-flex flex-row align-items-center justify-content-around">
+                <div class="playerOne__name h5 font-weight-bold p-0 m-0 d-flex flex-row align-items-center justify-content-center">VS</div>
+            </div>
+
+            <div class="playerTwo col-sm-4 d-flex flex-row align-items-center justify-content-around">
+                <div class="playerTwo__name h6 p-0 m-0 d-flex flex-row align-items-center justify-content-center">suhas</div>
+            </div>
+        </div>
+
+        <div class="mt-2 alert alert-info fade show text-center" role="alert">khelo maze lo!</div>
+
+        <div class="mx-auto col-sm-8 mb-2">
+            <div class="progress">
+                <div class="progress-bar playerOne-progress d-flex flex-row" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+        </div>
+
+        <div class="mx-auto col-sm-8">
+            <div class="progress">
+                <div class="progress-bar playerTwo-progress d-flex flex-row" role="progressbar" style="width: 0%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+        </div>
+        <div class="mx-auto col-sm-8">
+            <div class="finalScores"></div>
+        </div>
+
+        <div class="col-sm-8 mx-auto display d-flex flex-row align-items-center justify-content-around">
+
+            <div id="display_playerOne" class="player__hand h1 font-weight-bold"></div>
+            <div class="timer">--</div>
+            <div id="display_playerTwo" class="player__hand h1 font-weight-bold"></div>
+        </div>
+
+        <div class="players_HandsHolder col-sm-8 mx-auto p-2 border bg-white rounded d-flex align-items-center justify-content-around flex-wrap">
+            <div class="hands m-2 p-2 border d-flex align-items-center justify-content-center">1</div>
+            <div class="hands m-2 p-2 border d-flex align-items-center justify-content-center">2</div>
+            <div class="hands m-2 p-2 border d-flex align-items-center justify-content-center">3</div>
+            <div class="hands m-2 p-2 border d-flex align-items-center justify-content-center">4</div>
+            <div class="hands m-2 p-2 border d-flex align-items-center justify-content-center">5</div>
+            <div class="hands m-2 p-2 border d-flex align-items-center justify-content-center">6</div>
+        </div>
+    </main>
+
+    <script src="app.js"></script>
+</body>
+</html>
